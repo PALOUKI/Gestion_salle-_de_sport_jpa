@@ -21,11 +21,6 @@ public class PaiementDao extends GenericDao<Paiement, Integer> {
         return em.createQuery("SELECT p FROM Paiement p ORDER BY p.dateDePaiement DESC", Paiement.class).getResultList();
     }
 
-    /**
-     * Récupère les N paiements les plus récents.
-     * @param maxResults Le nombre maximum de paiements à retourner.
-     * @return Une liste des paiements les plus récents.
-     */
     public List<Paiement> listerRecents(int maxResults) {
         return em.createQuery("SELECT p FROM Paiement p ORDER BY p.dateDePaiement DESC", Paiement.class)
                 .setMaxResults(maxResults)

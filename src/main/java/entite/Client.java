@@ -19,7 +19,7 @@ public class Client extends GenericEntity{
     private String prenom;
 
     @Column(name = "date_naissance", nullable = false)
-    private LocalDateTime dateNaissance; // Utilisation de LocalDate pour DATE
+    private LocalDateTime dateNaissance;
 
     @Column(name = "email", unique = true, nullable = false, length = 255)
     private String email;
@@ -32,7 +32,7 @@ public class Client extends GenericEntity{
     private List<DemandeInscription> demandeInscriptions = new ArrayList<>();
 
     @OneToOne(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    private Membre membre; // Un client peut devenir un membre
+    private Membre membre;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Ticket> tickets = new ArrayList<>();
@@ -128,14 +128,13 @@ public class Client extends GenericEntity{
         this.tickets = tickets;
     }
 
-    // NOUVEAU : Override de toString() pour un affichage lisible dans le JComboBox
+    //Override de toString() pour un affichage lisible dans le JComboBox
     @Override
     public String toString() {
         return nom + " " + prenom;
     }
 
-    // Il est également bon d'implémenter equals() et hashCode() si vous utilisez des objets Client
-    // dans des collections comme des HashSet ou si vous comparez des objets Client.
+
     // Pour JComboBox.setSelectedItem(), equals() est important pour la comparaison d'objets.
     @Override
     public boolean equals(Object o) {

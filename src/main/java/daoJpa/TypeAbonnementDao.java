@@ -5,7 +5,7 @@ import entite.TypeAbonnement;
 import javax.persistence.EntityManagerFactory;
 import java.util.List;
 
-public class TypeAbonnementDao extends GenericDao<TypeAbonnement, String> { // Key changed to String
+public class TypeAbonnementDao extends GenericDao<TypeAbonnement, String> {
 
     public TypeAbonnementDao() {
         super(TypeAbonnement.class);

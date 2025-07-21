@@ -17,7 +17,7 @@ public class Membre extends GenericEntity{
     private LocalDateTime dateInscription;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "client_id", unique = true) // Clé étrangère et unique dans la table membres
+    @JoinColumn(name = "client_id", unique = true)
     private Client client;
 
     // Relation bidirectionnelle

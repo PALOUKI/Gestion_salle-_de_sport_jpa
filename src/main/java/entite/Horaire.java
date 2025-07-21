@@ -19,8 +19,6 @@ public class Horaire extends GenericEntity{
     @Column(name = "fin", nullable = false)
     private LocalDateTime fin;
 
-    // Relation ManyToMany avec Salle via la table de jointure salle_horaires
-    // mappedBy indique que la relation est gérée par l'entité Salle
     @ManyToMany(mappedBy = "horaires", fetch = FetchType.LAZY)
     private List<Salle> salles = new ArrayList<>();
 

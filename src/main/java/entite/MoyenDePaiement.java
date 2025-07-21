@@ -20,9 +20,8 @@ public class MoyenDePaiement extends GenericEntity {
     private List<Paiement> paiements = new ArrayList<>();
 
 
-    public MoyenDePaiement() {
-        // Default constructor
-    }
+    public MoyenDePaiement() {}
+
     public MoyenDePaiement(String code, String libelle) {
         this.code = code;
         this.libelle = libelle;

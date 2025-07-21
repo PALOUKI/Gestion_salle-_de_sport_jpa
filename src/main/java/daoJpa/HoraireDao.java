@@ -16,7 +16,6 @@ public class HoraireDao extends GenericDao<Horaire, Integer> {
 
     @Override
     public Horaire trouver(Integer id) {
-        // CORRECTION : "Horairee.class" remplacé par "Horaire.class"
         return em.find(Horaire.class, id);
     }
 

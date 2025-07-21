@@ -36,7 +36,7 @@ public class ClientDao extends GenericDao<Client, Integer> {
             return em.createQuery("SELECT c FROM Client c WHERE c.email = :email", Client.class)
                     .setParameter("email", email)
                     .getSingleResult();
-        } catch (Exception e) { // NoResultException ou NonUniqueResultException
+        } catch (Exception e) {
             return null;
         }
     }

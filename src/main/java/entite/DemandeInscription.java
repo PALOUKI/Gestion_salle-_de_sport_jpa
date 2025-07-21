@@ -13,7 +13,7 @@ public class DemandeInscription extends GenericEntity {
     private Integer id;
 
     @Column(name = "date_de_demande", nullable = false)
-    private LocalDateTime dateDeDemande; // Utilisation de LocalDateTime pour DATETIME
+    private LocalDateTime dateDeDemande;
 
     @Column(name = "date_de_traitement")
     private LocalDateTime dateDeTraitement;
