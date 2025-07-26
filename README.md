@@ -26,6 +26,6 @@ The administrator must be able to:
 
 <summary><h2>📷 Screenshots</h2></summary>
 
-<img src="https://github.com/PALOUKI/gestion_salle_de_sport_JPA/blob/main/png/un.png" alt=""> <img src="https://github.com/PALOUKI/gestion_salle_de_sport_JPA/blob/main/png/deux.png" alt=""> <img src="https://github.com/PALOUKI/gestion_salle_de_sport_JPA/blob/main/png/trois.png" alt=""> <img src="https://github.com/PALOUKI/gestion_salle_de_sport_JPA/blob/main/png/quatre.png" alt="">  
+<img src="https://github.com/PALOUKI/gestion_salle_de_sport_jpa/blob/main/png/un.png" alt=""> <img src="https://github.com/PALOUKI/gestion_salle_de_sport_jpa/blob/main/png/deux.png" alt=""> <img src="https://github.com/PALOUKI/gestion_salle_de_sport_jpa/blob/main/png/trois.png" alt=""> <img src="https://github.com/PALOUKI/gestion_salle_de_sport_jpa/blob/main/png/quatre.png" alt="">  <img src="https://github.com/PALOUKI/gestion_salle_de_sport_jpa/blob/main/png/cinq.png" alt="">  
 
 <img src="https://komarev.com/ghpvc/?username=PALOUKI" alt="palouki"> 
